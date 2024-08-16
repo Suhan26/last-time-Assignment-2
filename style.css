@@ -2,14 +2,16 @@
 * {
         margin: 0px;
         padding: 0px;
+        font-family: "Inter", sans-serif;
+
 }
 /*######Universal style################*/
 
 
 /* html element main parants style  */
-html{background-color:beige;
-     margin: auto;}
-body {background-color: rgb(175, 162, 162);
+html{background-color:rgb(239, 239, 113);
+    }
+body {background-color: rgb(255, 255, 255);
      max-width: 1440px;
         margin: auto;
 }
@@ -20,26 +22,41 @@ body {background-color: rgb(175, 162, 162);
 
 
 /***************Header style******************/
-header {background:linear-gradient(black ,  white , black);
-        width: 78%;
+header {background: rgb(220, 213, 213);
+        background-image: linear-gradient(
+        rgb(16, 16, 16),
+        rgba(9, 9, 9, 0.605)40%,
+        rgba(9, 9, 9, 0.597)43%,
+        rgba(9, 9, 9, 0.597)45%,
+        rgba(5, 5, 5, 0.590)47%,
+        rgba(9, 9, 9, 0.597)50%,
+        rgba(5, 5, 5, 0.59)53%,
+        rgba(9, 9, 9, 0.597)57%,
+        rgba(9, 9, 9, 0.597)60%,
+        rgba(9, 9, 9, 0.597)63%,
+        rgba(9, 9, 9, 0.597)65%,
+        rgba(9, 9, 9, 0.700)77%,
+        black); 
+        background-blend-mode: multiply;
         margin: auto;
-        border: 1px solid red;
         padding-top: 30px;
-        padding-left: 10%;
-        padding-right: 10%;
+        width: 100%;  
 }
+.header-content-container{width: 80%;
+                           border: dashed 2px black;
+                          margin: auto;}
 
-header>nav {
-        border:1px red solid;
+.header-content-container nav {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
 }
-nav .title{color: red;
+nav .title{color:rgb(230, 83, 60);
+           font-style: italic;
           font-size: 30px;}
 
-nav>ol {border: 1px solid white;
+nav>ol {border: .2px solid rgba(255, 255, 255, 0.303);
         border-radius: 19px;
         width: 45%;
         padding: 3px 16px;
@@ -55,49 +72,59 @@ nav>svg {
 nav>ol>li {
         list-style: none;
 }
-nav>ol>li:first-child{background-color: red;
+nav>ol>li:first-child{background-color: rgb(230, 83, 60);
                       border-radius:7px;
                       padding: 3px 12px ;}
-nav>ol>li:hover{background-color: red;
+nav>ol>li:hover{background-color:rgb(230, 83, 60);
         border-radius:7px;
         padding: 3px 12px ;}
 
 nav>ol>li>a {
         text-decoration: none;
-        font-size: 20px;
+        font-size: 12px;
         color: white;
 }
 
 /*********banner************/
 .banner{display: flex;
         justify-content:space-between;
-        align-items:flex-end;
-         border: 1px solid blue;}
+        align-items:center;
+        border: 1px solid blue;
+       }
 
 
 
 /****banner text****/
 .bann-text-cont{width: 47%;
-                padding: 10px 0px 60px 0px;
                border: 1px solid black;}
-.bann-title{font-size: 95px;}
+.bann-title{font-size:40px;
+           color: white;}
+.bann-title>span{color: wheat;
+              
+                  font-size:100px;
+                  font-weight: 400;
+                  font-family: "Grey Qo", cursive;
+}           
 .bann-desc{margin: 20px 0px 20px 0px;
-           line-height: 20px;}
+           line-height: 15px;
+           font-size:13px;
+           color: rgba(255, 255, 255, 0.52);}
 .joinbtn{background-color: tomato;
          border-radius:30px;
-         width: 200px;
+         width: 40%;
          font-size: 15px;
          color: white;
          letter-spacing:.5px;
          padding: 10px;
          border: none;}
-.dowbtn{border: 3px solid white;
+.dowbtn{border: 1px solid white;
         border-radius: 30px;
         font-size: 15px;
         font-weight: 700;
+        color: white;
         letter-spacing:.5px;
         padding: 10px;
-        width: 200px;
+        width: 40%;
         color: rgba(255, 255, 255, 0.768);
         background-color:rgba(255, 255, 255, 0);}
 /*###banner text###*/
@@ -112,33 +139,87 @@ nav>ol>li>a {
                     bottom: 0px;
                     } 
 /*boxs*/
-.bann-img-con > .fivbox {width:200px;
+.bann-img-con > .fivbox {width:40%;
                           position: absolute;
                          left:70%;
                           top: 30%;
-                         background-color: white;
-                         border-radius: 12px;
+                          background-color:rgba(48, 48, 48, 0.54);
+                          border: 1px solid rgba(255, 255, 255, 0.703);
+                          border-radius: 12px;
                          padding: 15px;}
-.bann-img-con > .fivbox > p:first-child{font-size: 50px;
+.bann-img-con .fivbox > p:first-child{font-size:30px;
                                         font-weight:800;
-                                }          
+                                        color: white;}
+ .bann-img-con .fivbox > p:last-child{font-size: 13px;
+        color: rgba(255, 255, 255, 0.518);}          
 .bann-img-con > .threebox {width: fit-content;
                          position: absolute;
                          bottom: 10%;
+                         width: 150px;
                          left: 0px;
-                         background-color: white;
-                         border-radius: 12px;
-                         padding: 15px;}
-.bann-img-con > .threebox >.threenumber{font-size: 40px;
+                         background-color:rgba(48, 48, 48, 0.54);
+                         border: 1px solid rgba(255, 255, 255, 0.703);
+                         border-radius: 15px;
+                         padding: 15px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        }
+.circal{height: 30px;
+        width: 30px;
+        background-color: rgba(255, 0, 0, 0.874);
+        border-radius: 100%;}   
+.bann-img-con  .threebox .threenumber{font-size: 40px;
+                                  color: white;
                                         font-weight:800;
                                 } 
+.bann-img-con .threebox  .threedesc{font-size: 15px;
+                                       color: rgba(255, 255, 255, 0.556);}                               
+                            
 /* boxs                                          */
 /*###banner img###*/
 /*##########banner############*/
 /*#############Header style######################*/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /************************change your habits************/
-.change{padding:5% 10%;
+.change{padding:5% 10%; display: none;
        border: 1px solid red;
         color: rgb(40, 35, 35);
         width:79%;
@@ -167,7 +248,8 @@ nav>ol>li>a {
 
 
 /*--**********Run and Extra mile Easily ******************/
-.Run-Easily{background-color: black;
+.Run-Easily{
+        background-color: black; 
            width: 80%;
            margin: auto;
            margin-top: 50px;
@@ -178,8 +260,9 @@ nav>ol>li>a {
             align-items: center;
             padding-top: 30px;    
             padding-bottom: 30px;       
+            display: none;
         }
-.run-con{width:90%;
+.run-con{ width:90%;
          display: flex;
          justify-content:space-between;}
 /*******run-texts*******/
@@ -246,7 +329,8 @@ nav>ol>li>a {
         nav>svg {
                 display: block;
         }
-        .banner{flex-direction: column;}
+        .banner{flex-direction: column;
+               gap: 30px;}
         .bann-text-cont{width: 100%;}
         .bann-img-con{width: 100%;}
         .bann-img-con > .fivbox {width:100px; }
