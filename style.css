@@ -395,6 +395,32 @@ table  ,  td{border: 1px solid rgba(255, 250, 250, 0.521);
     background-size:130%;}
 /*############meet our team###########*/
 
+/***********sussess story******/
+.sussess{background: rgb(34, 34, 34); }
+.sussess-con{width: 90%;
+             margin: auto;
+            margin-top: 50px;
+              color:white;
+              display:flex;
+              gap: 10%;
+              padding-top:50px ;
+              border: 1px solid blue;
+              padding-bottom:50px ;}
+.suss-text{border: 1px solid red;}
+.suss-text > h1{font-size: 50px;
+                margin-bottom: 20px;}     
+.suss-text > p{font-size: 15px;
+            line-height: 26px;
+            margin-bottom: 20px;
+            color: rgba(240, 248, 255, 0.561);}
+ .suss-text > b{color: rgba(255, 255, 255, 0.708);}
+ .suss-img {border: 1px solid red;
+height: fit-content;}
+ .suss-img > img {border-radius: 15px;
+        height: fit-content;
+                        }              
+
+/*######## sussess story ###### */
 /*************footer all style***/
 footer{color: white;
         margin-top: 67px;
@@ -519,6 +545,22 @@ footer{color: white;
      .run-img> img{width: 90%;}   
     /*#######run an extra mile###########*/
 /************BmI Calculator**********/
+
+/********Sussess*******/
+@media screen and (min-width:320px) and (max-width:427px) {
+        .sussess-con{flex-direction: column;}
+        .suss-img > img {width: 90%;
+                         margin-top: 100px;}
+}
+
+
+
+
+
+
+
+/*########Sussess##############*/
+
 /*******BmI Calculator*******/
 
 .BMI_con{flex-direction: column;}
