@@ -11,7 +11,7 @@
 /* html element main parants style  */
 html{background-color:rgb(239, 239, 113);
     }
-body {background-color: rgb(255, 255, 255);
+body {background-color: rgb(0, 0, 0);
      max-width: 1440px;
         margin: auto;
 }
@@ -43,7 +43,6 @@ header {background: rgb(220, 213, 213);
         width: 100%;  
 }
 .header-content-container{width: 80%;
-                           border: dashed 2px black;
                           margin: auto;}
 
 .header-content-container nav {
@@ -65,7 +64,7 @@ nav>ol {border: .2px solid rgba(255, 255, 255, 0.303);
         align-items: center;
 }
 
-nav>svg {
+nav>#mi {
         display: none;
 }
 
@@ -89,26 +88,30 @@ nav>ol>li>a {
 .banner{display: flex;
         justify-content:space-between;
         align-items:center;
-        border: 1px solid blue;
        }
 
 
 
 /****banner text****/
 .bann-text-cont{width: 47%;
-               border: 1px solid black;}
-.bann-title{font-size:40px;
-           color: white;}
+                }
+.bann-title{font-size:50px;
+           line-height: 65px;
+           font-weight: 700;
+           color: white;
+       
+     }
 .bann-title>span{color: wheat;
-              
                   font-size:100px;
                   font-weight: 400;
                   font-family: "Grey Qo", cursive;
 }           
 .bann-desc{margin: 20px 0px 20px 0px;
-           line-height: 15px;
+           line-height: 17px;
            font-size:13px;
-           color: rgba(255, 255, 255, 0.52);}
+           font-weight:400;
+           letter-spacing: .3px;
+           color: rgba(242, 240, 240, 0.807);}
 .joinbtn{background-color: tomato;
          border-radius:30px;
          width: 40%;
@@ -116,6 +119,7 @@ nav>ol>li>a {
          color: white;
          letter-spacing:.5px;
          padding: 10px;
+         margin-right: 20px; 
          border: none;}
 .dowbtn{border: 1px solid white;
         border-radius: 30px;
@@ -130,7 +134,6 @@ nav>ol>li>a {
 /*###banner text###*/
 /****banner img****/
 .bann-img-con{width:47%;
-              border: 1px solid red;
               position: relative;
               display: flex;
               justify-content: center;}
@@ -141,9 +144,9 @@ nav>ol>li>a {
 /*boxs*/
 .bann-img-con > .fivbox {width:40%;
                           position: absolute;
-                         left:70%;
-                          top: 30%;
-                          background-color:rgba(48, 48, 48, 0.54);
+                         left:65%;
+                          top: 25%;
+                          background-color:rgba(103, 100, 100, 0.54);
                           border: 1px solid rgba(255, 255, 255, 0.703);
                           border-radius: 12px;
                          padding: 15px;}
@@ -151,11 +154,11 @@ nav>ol>li>a {
                                         font-weight:800;
                                         color: white;}
  .bann-img-con .fivbox > p:last-child{font-size: 13px;
-        color: rgba(255, 255, 255, 0.518);}          
+        color: rgba(255, 255, 255, 0.608);}          
 .bann-img-con > .threebox {width: fit-content;
                          position: absolute;
                          bottom: 10%;
-                         width: 150px;
+                         width: 40%;
                          left: 0px;
                          background-color:rgba(48, 48, 48, 0.54);
                          border: 1px solid rgba(255, 255, 255, 0.703);
@@ -169,7 +172,7 @@ nav>ol>li>a {
         width: 30px;
         background-color: rgba(255, 0, 0, 0.874);
         border-radius: 100%;}   
-.bann-img-con  .threebox .threenumber{font-size: 40px;
+.bann-img-con  .threebox .threenumber{font-size: 30px;
                                   color: white;
                                         font-weight:800;
                                 } 
@@ -182,65 +185,45 @@ nav>ol>li>a {
 /*#############Header style######################*/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /************************change your habits************/
-.change{padding:5% 10%; display: none;
-       border: 1px solid red;
-        color: rgb(40, 35, 35);
-        width:79%;
-        margin: auto;}
+.change{width: 100%;
+        height: fit-content;
+       background-color:black;
+       padding-top: 65px;
+
+       }
+.change-content{width: 80%;
+                margin:auto;
+                    }
 
 /********change text*********/
-.change-text {border: 1px solid blue;
+.change-text {
         text-align: center;
-        margin-bottom: 30px;}     
+        margin-bottom: 40px;}     
+.change-text>.title{font-size: 40px;
+                    color:rgba(255, 255, 255, 0.919);
+                    margin-bottom: 7px;}
+.change-text>.desc{color: rgba(255, 255, 255, 0.631);
+        font-size: 14px;}        
 /********change text*********/
 /********change mtpw*********/
-.MTPW{border: 1px solid rgb(0, 255, 8);
+.MTPW{
         display: grid;
-        grid-template-columns: repeat(4, 22%);
-        justify-content: space-between;
-       
+        grid-template-columns: repeat(4, 24%);
+        grid-template-rows:auto;
+        justify-content: space-between;       
 }
 .MTPW-circals{border: 1px dotted black;
               text-align: center;
-              width: fit-content;}  
- .MTPW-circals  > img {border-radius: 100%;}               
+             
+                }  
+ .MTPW-circals  > img {border-radius: 100%;
+                        width: 85%;}     
+ .MTPW-circals  > h1 {color: rgba(255, 254, 252, 0.899);
+                       margin-bottom:5px;
+                        margin-top:25px;  }         
+ .MTPW-circals  > p {color: rgba(255, 255, 255, 0.631);
+                     font-size: 13px;}         
 /********change mtpw*********/
 
 /*######################change your habits#############/
@@ -249,8 +232,9 @@ nav>ol>li>a {
 
 /*--**********Run and Extra mile Easily ******************/
 .Run-Easily{
-        background-color: black; 
-           width: 80%;
+        background-color:rgb(34, 34, 34); 
+           width: 90%;
+           height: 350px;
            margin: auto;
            margin-top: 50px;
            color: white;
@@ -258,82 +242,247 @@ nav>ol>li>a {
            display: flex;
            justify-content: center;
             align-items: center;
-            padding-top: 30px;    
-            padding-bottom: 30px;       
-            display: none;
+           
         }
-.run-con{ width:90%;
+.run-con{ width:93%;
+           height:85%;
          display: flex;
          justify-content:space-between;}
 /*******run-texts*******/
-.run-texts{border: 1px solid red;
-             width: 48%;}
-.run-title{font-size: 70px;}             
+.run-texts{
+             width: 50%;}
+.run-title{font-size:50px;
+            width: 70%;}             
  .run-btn{background-color: tomato;          
         border-radius:30px;
         width: 200px;
-        font-size: 23px;
+        font-size:18px;
         color: white;
         letter-spacing:.5px;
         padding: 14px;
         border: none;}
  .run-desc{margin:27px 0px 27px 0px;
-           line-height: 25px;}       
+           line-height: 20px;
+           font-weight: 300;
+           font-size: 12px;}       
 /*########run-texts######*/ 
 /*******run-img*******/
 .run-img{display: flex;
-        width: 40%;
+        width: 50%;
         display: flex;
         justify-content: end;}
-.run-img > img{width:90%;
-               border-radius: 19px;}        
-/*########run-img######*/  
+        .run-img > img{width:70%;
+                border-radius: 19px;}        
+                /*########run-img######*/  
+                
+ /***********Run and Extra mile Easily--######################*/
 
-/*--**********Run and Extra mile Easily--######################*/
+/* BMI-Calculator */
+.BMI-Calculator{background: rgb(34, 34, 34);
+                margin-top: 50px;}
+.BMI_con{width: 90%;
+        padding-top:30px;
+        padding-bottom:30px;
+        color: white;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;}
+.ch{
+               font-size: 70px;}       
+.BMI-table{
+          }  
+.BMI-table > h1{margin-bottom: 20px;
+                font-size: 30px;}      
+table{border-collapse: collapse;} 
+table  ,  td{border: 1px solid rgba(255, 250, 250, 0.521);
+            height: 20px;
+            width: 250px;}    
+ th{height: 40px;  width: 250px;
+    border: 1px solid rgba(255, 250, 250, 0.521);;}           
+ td{height:35px;
+        padding-left: 10px;
+               font-size: 14px;}
+/*********Calculater***********/
+.BMI-calcu{border: 1px dotted tomato;
+         width:fit-content;
+         height: 100%;
+         width: 60%;}
+.bmi-form{display: grid;
+          grid-template-columns: repeat(2,48%);
+          grid-template-rows: repeat(3,40px);
+          grid-gap: 10px;}  
+.BMI-calcu> h1 {font-size: 30px;}          
+.BMI-calcu > p {font-size:12px;
+                 margin-top:10px;
+                 margin-bottom:15px;}          
+.select{width: 203%;}                 
+/* .ff{background-color: rgba(255, 255, 255, 0.358);}
+.ff::placeholder{color: white;} */
+.from-btn{background-color: tomato;          
+        border-radius:30px;
+        width: 170px;
+        margin-top: 10px;
+        font-size:18px;
+        color: white;
+        letter-spacing:.5px;
+        padding: 10px;
+        border: none;}
+/* BMI-Calculator */
 
 /*-- \*********meet our team**********/
-.meet-our-team{display: none;}
+.meet-our-team{margin: auto;
+                text-align: center;
+                margin-top: 50px;}
+.meet-text{width:45%;
+           color: white;
+           margin: auto;}
+.meet-tittle{font-size: 30px;
+             color: rgba(240, 248, 255, 0.901);}
+.meet-desc{font-size:13px;
+           color: rgba(219, 216, 210, 0.724);}           
 
-
+                /* meet team image section */
 .imagsteam{
-        background-color: black;
-        width: 80%;
+         background-color: rgba(255, 255, 255, 0.1);
+        width: 90%;
         margin: auto;
-        margin-top: 50px;
+        margin-top: 30px;
+        padding-top: 50px;
+        padding-bottom:50px;
         color: white;
         border-radius: 25px;
         display: grid;
-        grid-template-columns: repeat(3, 250px);   
-        grid-template-rows: repeat(3, 250px);   
-        gap: 50px;
-        justify-content: center;
+        grid-template-columns: repeat(3, 27%);   
+        justify-content: center; 
+         gap:3%;}
        
-      
-        }
-       
-
-.imagsteam > .img { border: 2px solid red;
-}     
-
-.imagsteam > .img > img{width: 200px;}
-
+.imagsteam > .img {border-radius: 15px;
+                  height:36vh;
+                  display: flex;
+                  background-color: rgb(156, 154, 154);
+                  background-blend-mode: multiply;
+                  align-items: end;}     
+.imagsteam > .img > .ttt{ width: fit-content;
+                         margin-left: 10px;
+                         margin-bottom: 10px; 
+                         text-align: left;}
+.imagsteam > .img > .ttt>.name{color:white;
+                              font-size: 20px;}
+.imagsteam > .img > .ttt>.desc{color: rgba(220, 224, 227, 0.841);
+                                     font-size: 16px;}
+.imagsteam .black{background-image:url(img/trainer1.png) ;               
+    background-repeat: no-repeat;
+    background-position-x:-0px;
+    background-size:120%;}
+.imagsteam .blue{background-image:url(img/trainer2.png) ;               
+    background-repeat: no-repeat;
+    background-position-x:-50px;
+    background-size:130%;}
+.imagsteam .tak{background-image:url(img/trainer3.png) ;               
+    background-repeat: no-repeat;
+    background-size:100%;}
+    
+.imagsteam .red{background-image: url(img/trainer4.png);
+    background-repeat: no-repeat;
+    background-position-x:-150px;
+    background-size:160%;}
+.imagsteam .chasma{background-image: url(img/trainer5.png);
+    background-repeat: no-repeat;
+    background-position:-100px;
+    background-size:140%;}
+.imagsteam .brone{background-image: url(img/trainer6.png);
+    background-repeat: no-repeat;  
+    background-size:130%;}
 /*############meet our team###########*/
+
+/*************footer all style***/
+footer{color: white;
+        margin-top: 67px;
+        background: rgba(255, 255, 255, 0.1);
+}
+.footercon{width: 75%;
+           margin: auto;
+           padding: 50px 0px;}
+.footext{display:grid;
+         grid-template-columns:50% 25% 25%;
+         gap:4%;}
+.footext > .foot1st{}  
+.footext > .foot1st > h1{color:rgb(230, 83, 60);
+        font-size: 35px;
+        font-style:italic;}
+.footext > .foot1st > p{width: 80%;
+                        font-size: 11px;
+                        color: rgba(255, 255, 255, 0.492);
+                        margin-top: 8px;
+                        line-height:18px;
+                       }
+.footext > .foot2st{}  
+.footext > .foot2st > h1{font-size:25px;
+                    color: rgba(240, 248, 255, 0.809);
+                     margin-bottom: 20px;}
+.footext > .foot2st >p{font-size: 15px;
+        color: rgba(255, 255, 255, 0.492);
+        margin-top:7px;
+} 
+
+.footext > .foot3st{}    
+
+.footext > .foot3st > h1{color: rgba(240, 248, 255, 0.809);
+                         font-size: 25px;
+                         margin-bottom: 20px;}
+.footext > .foot3st > p{font-size: 15px;
+        color: rgba(255, 255, 255, 0.492);
+        margin-top:7px;
+
+}     
+.footright{text-align: center;
+           border-top:2px solid rgba(233, 230, 230, 0.466);
+           width: 100%;
+           color: rgba(251, 251, 251, 0.594);
+         margin: auto;
+         margin-top:30px;
+         padding-top:7px;}       
+/*##########footer all style #####*/
+
+
+/*********very very small*******/
+@media screen and (min-width:200px) and (max-width :321px){
+        .imagsteam{padding-bottom: 100px;}
+        .imagsteam .tak{
+                background-size:120%;}
+                
+            .imagsteam .red{
+                background-position-x:-260px;
+                background-size:260%;}
+            .imagsteam .chasma{
+                background-position:-80px;
+                background-size:140%;}
+            .imagsteam .brone{margin-bottom: 70px;}
+            
+            /* BMI  */
+            .select{width:100%} 
+}
+/*#########very very small ######*/
+
 
 
 /***********Small Devise Media quary header******************/
 
 @media screen and (max-width :576px) {
   /* header  */
+      nav{margin-bottom: 30px;}
         nav>ol { display: none;
         }
-        nav>svg {
+        nav>#mi {height: 20px;
                 display: block;
         }
         .banner{flex-direction: column;
                gap: 30px;}
         .bann-text-cont{width: 100%;}
         .bann-img-con{width: 100%;}
-        .bann-img-con > .fivbox {width:100px; }
+        .bann-img-con > .fivbox {width:35%;}
+        .bann-img-con > .threebox {width:35%;}
+
     /*####header##*/
     /****Change your habits***/
 .MTPW{display: flex;
@@ -343,20 +492,94 @@ nav>ol>li>a {
 
        
 }   
-.MTPW-circals{width: 70%;
+.MTPW-circals{width:60%;
                }
-.MTPW-circals > img{width: 100%;}                
+.MTPW-circals > img{width: 100%;
+                   margin-bottom: -17px;}                
     /*###Change your habits#####*/
 
+ 
     /*********run an extra mile***** */
+     .Run-Easily{height: fit-content;}
     .run-con{flex-direction: column;
+              padding: 20px;
+              padding-bottom: 30px;
              align-items: center;}
     .run-texts{width: 90%;
-               justify-content: center;}
+               justify-content: center;
+               text-align: center;}
+      .run-texts>.run-title{width: 100%;
+          font-size: 35px;}      
+    .run-btn{width: 90%;
+             padding: 10px;}     
     .run-img{width: 100%;
               margin-top: 50px;
               align-items: center;
         justify-content: center; }
+     .run-img> img{width: 90%;}   
     /*#######run an extra mile###########*/
+/************BmI Calculator**********/
+/*******BmI Calculator*******/
+
+.BMI_con{flex-direction: column;}
+
+.BMI-calcu{width: 100%;
+  margin-top: 30px;}
+  table  , td{width: 300px;} 
+/*###########BmI Calculator########/
+
+   /*********footer style************/
+   .footext{display: flex;
+            flex-direction: column;
+           gap:12px;}
+   /*##########footer style#####*/
+
+  /*******team all style*******/
+  .imagsteam{padding-bottom: 200px;}
+  .meet-text{width:80%;}
+  .imagsteam{grid-template-columns: 80%;}
+  .imagsteam > .img > .ttt>.name{font-size: 13px}
+ .imagsteam > .img > .ttt>.desc{font-size: 10px;}
+  /*######team all style##########*/
+
+
 }
 /*#############Media quary##################*/
+
+
+
+
+
+
+
+  /*******team all style dasktob*******/
+  @media screen and (min-width:1026px) and (max-width:1440px) {
+         .imagsteam > .img {
+        height: 35vh;}
+         }
+  
+  @media screen and (min-width:980px) and (max-width:1300px){
+        .imagsteam > .img {border-radius: 15px;
+                height:26vh;}
+        .imagsteam .red{  background-position-x:-150px;
+                background-size:200%;}
+        .imagsteam .chasma{  background-position-x:-60px;}     
+        .imagsteam > .img > .ttt>.name{font-size: 13px;}
+        .imagsteam > .img > .ttt>.desc{font-size: 10px;}
+
+}       
+@media screen and (min-width:1305px) and (max-width:1445px){
+        .imagsteam > .img > .ttt>.name{font-size:15px;}
+        .imagsteam > .img > .ttt>.desc{font-size: 10px;}
+
+        .imagsteam > .img {height:40vh;} 
+        .imagsteam .red{    background-position-y:0px;
+                background-size: 180%;
+        }
+        .imagsteam .chasma{background-position-y:-100px;
+                background-size:150%;}
+        .imagsteam .brone{    background-repeat: no-repeat;  
+                background-size:130%;}        
+}
+
+  /*######team all style##########*/
